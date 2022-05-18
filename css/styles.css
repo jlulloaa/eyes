@@ -10,6 +10,7 @@ body {
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 .eye {
   width: 240px;
@@ -20,6 +21,7 @@ body {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .ball {
   width: 80px;
@@ -30,4 +32,32 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  z-index: 2;
+}
+
+
+#video_wrap {
+  position: absolute;
+}
+#video_overlays {
+  position: absolute;
+}
+#video_overlays img {
+  width: 850px;
+  height: 450px;
+  /* z-index: 0; */
+}
+#video_frame {
+  width: 720px;
+  /* z-index: 0; */
+}
+#canvas_frame {
+  width: 320px;
+  height: 200px;
+  float: right;
+}
+.button_controller {
+  float: right;
+  border: 1px solid gray;
+  padding: 10px;
 }

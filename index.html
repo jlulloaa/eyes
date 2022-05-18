@@ -1,16 +1,43 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <!-- <meta name="description" content="Eyes Photobooth"> -->
+        <!-- Favicons -->
+        <link href="assets/img/isandex_favicon.png" rel="icon" >
+        <link href="assets/img/isandex_favicon.png" rel="apple-touch-icon">
+
+        <title>Eyes photobooth</title>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <div class="eyes">
-            <div class="eye">
-                <div class="ball"></div>
+        <!-- Mensaje de error -->
+        <span name="errorMsg"></span>
+
+        <div id="video_wrap">
+            <div class="eyes" id="video_overlays">
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
             </div>
-            <div class="eye">
-                <div class="ball"></div>
-            </div>
+            <video id="video_frame" playsinline autoplay>
+            </video>
         </div>
-        <script src="./eyes.js"></script>
+    </div>
+        
+        <!-- Capturamos la imagen a través de la API web y lo mostramos en el canvas -->
+        <div class="button_controller">
+            <!-- Botón para capturar -->
+            <button id="snap_frame">Capturar Imagen</button>
+            <br/><br/>
+            <!-- Imagen de la Webcam -->
+            <canvas id="canvas_frame"></canvas>
+        </div>
+
+    <script src="./eyes.js"></script>
     </body>
 </html>
