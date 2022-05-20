@@ -9,8 +9,8 @@ const width = document.getElementById('video_frame').offsetWidth;
 document.onmousemove = (event) => {
     const x = Math.min(...[(event.clientX * 100) / width, 100]) + '%'; 
     const y = Math.min(...[(event.clientY * 100) / height, 100]) + '%';
-    console.log('X: '+ event.clientX + '(L:' + rleft + ', W:' + (rleft+width) + ')');
-    console.log('Y: '+ event.clientY + '(T:' + rtop + ', H:' + (rtop+height) + ')');
+    // console.log('X: '+ event.clientX + '(L:' + rleft + ', W:' + (rleft+width) + ')');
+    // console.log('Y: '+ event.clientY + '(T:' + rtop + ', H:' + (rtop+height) + ')');
     
     for (let i=0; i<balls.length; i++) {
         balls[i].style.left = x;
@@ -46,7 +46,7 @@ const constraints = {
 };
 
 // Comprobamos acceso a la Webcam
-async function init() {
+async function start_cam() {
     try {
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         handleSuccess(stream);
@@ -61,8 +61,10 @@ async function handleSuccess(stream) {
     videoFrame.srcObject = stream;
 }
 
+// Enable stop button
+
 // Iniciamos JS
-init();
+// init();
 
 // Hacemos captura de pantalla al hacer click
 // var context = canvasFrame.getContext('2d');

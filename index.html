@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-        <!-- <meta name="description" content="Eyes Photobooth"> -->
+        <meta name="description" content="Eyes Photobooth">
         <!-- Favicons -->
         <link href="assets/img/isandex_favicon.png" rel="icon" >
         <link href="assets/img/isandex_favicon.png" rel="apple-touch-icon">
@@ -27,7 +27,10 @@
             <video id="video_frame" playsinline autoplay>
             </video>
             <div id="sizeRange">
-                <input type="range" min="0" max="100" value="100" class="slider">
+                <label for="sizeSlider">Slide to Resize Eyes</label><br>
+                <input type="range" min="0" max="100" value="100" class="slider" id="sizeSlider">
+                <button type="button" onclick=start_cam() id="start_cam">Start the camera</button> 
+                <!-- <button type="button" onclick=stop_cam() id="stop_cam">Stop the camera</button>  -->
             </div>
         </div>
     </div>
