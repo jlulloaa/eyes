@@ -7,6 +7,7 @@ body {
 .eyes {
   position: absolute;
   top: 50%;
+  left: -5%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -14,10 +15,10 @@ body {
 }
 .eye {
   width: 240px;
-  height: 120px;
+  height: 80px;
   background: #fff;
   display: inline-block;
-  margin: 40px;
+  margin: 5px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -36,21 +37,21 @@ body {
 }
 
 
-#video_wrap {
+#area_frame {
   position: absolute;
-}
-#video_overlays {
-  position: absolute;
-}
-#video_overlays img {
   width: 850px;
   height: 450px;
-  /* z-index: 0; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
 #video_frame {
   width: 720px;
-  /* z-index: 0; */
-}
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+ }
+
 #canvas_frame {
   width: 320px;
   height: 200px;

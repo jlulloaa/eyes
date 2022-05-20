@@ -15,28 +15,31 @@
         <!-- Mensaje de error -->
         <span name="errorMsg"></span>
 
-        <div id="video_wrap">
-            <div class="eyes" id="video_overlays">
-                <div class="eye">
-                    <div class="ball"></div>
+        <div id="area_frame">
+            <div class="eyes" id="eyes">
+                <div class="eye" id="leye">
+                    <div class="ball" id="lball"></div>
                 </div>
-                <div class="eye">
-                    <div class="ball"></div>
+                <div class="eye" id="reye">
+                    <div class="ball" id="rball"></div>
                 </div>
             </div>
             <video id="video_frame" playsinline autoplay>
             </video>
+            <div id="sizeRange">
+                <input type="range" min="0" max="100" value="100" class="slider">
+            </div>
         </div>
     </div>
         
         <!-- Capturamos la imagen a través de la API web y lo mostramos en el canvas -->
-        <div class="button_controller">
+        <!-- <div class="button_controller"> -->
             <!-- Botón para capturar -->
-            <button id="snap_frame">Capturar Imagen</button>
-            <br/><br/>
+            <!-- <button id="snap_frame">Capturar Imagen</button> -->
+            <!-- <br/><br/> -->
             <!-- Imagen de la Webcam -->
-            <canvas id="canvas_frame"></canvas>
-        </div>
+            <!-- <canvas id="canvas_frame"></canvas> -->
+        <!-- </div> -->
 
     <script src="assets/js/eyes.js"></script>
     </body>
