@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Eyes Photobooth">
         <!-- Favicons -->
         <link href="assets/img/isandex_favicon.png" rel="icon" >
@@ -9,41 +9,46 @@
 
         <title>Eyes photobooth</title>
 
+        <!-- Link to the basic Bootstrap CSS -->
+        <link href="assets/css/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" >
+        <!-- <link href="assets/css/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet" > -->
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     </head>
     <body>
-        <!-- Mensaje de error -->
-        <span name="errorMsg"></span>
-
-        <div id="area_frame">
-            <div class="eyes" id="eyes">
-                <div class="eye" id="leye">
-                    <div class="ball" id="lball"></div>
-                </div>
-                <div class="eye" id="reye">
-                    <div class="ball" id="rball"></div>
+        <div class="container-fluid main"> <!-- Main block-->
+            <div class="row"><!-- Header -->
+                <div class="col border">
+                    <div id="area_frame">
+                        <div class="eyes" id="eyes">
+                            <div class="eye" id="leye">
+                                <div class="ball" id="lball"></div>
+                            </div>
+                            <div class="eye" id="reye">
+                                <div class="ball" id="rball"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <video id="video_frame" playsinline autoplay>
+                            </video>
+                    </canvas>
+                        </div>
+                        <div id="sizeRange">
+                            <label for="sizeSlider" style="color: yellow">Slide to Resize Eyes</label><br>
+                            <input type="range" min="1" max="100" value="100" class="form-range" id="sizeSlider">
+                            <button type="button" class="btn btn-primary" onclick=start_cam() id="start_cam">Start the camera</button> 
+                            <button type="button" class="btn btn-primary" onclick=stop_cam() id="stop_cam">Stop the camera</button> 
+                        </div>
+                    </div>
                 </div>
             </div>
-            <video id="video_frame" playsinline autoplay>
-            </video>
-            <div id="sizeRange">
-                <label for="sizeSlider">Slide to Resize Eyes</label><br>
-                <input type="range" min="0" max="100" value="100" class="slider" id="sizeSlider">
-                <button type="button" onclick=start_cam() id="start_cam">Start the camera</button> 
-                <!-- <button type="button" onclick=stop_cam() id="stop_cam">Stop the camera</button>  -->
-            </div>
-        </div>
-    </div>
-        
-        <!-- Capturamos la imagen a través de la API web y lo mostramos en el canvas -->
-        <!-- <div class="button_controller"> -->
-            <!-- Botón para capturar -->
-            <!-- <button id="snap_frame">Capturar Imagen</button> -->
-            <!-- <br/><br/> -->
-            <!-- Imagen de la Webcam -->
-            <!-- <canvas id="canvas_frame"></canvas> -->
-        <!-- </div> -->
 
-    <script src="assets/js/eyes.js"></script>
+
+
+        <footer class="footer">
+            MIT licence
+        </footer>
+    </div> 
+        <script src="assets/js/eyes.js"></script>
+
     </body>
 </html>

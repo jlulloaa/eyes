@@ -1,46 +1,52 @@
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
   margin: 0;
   padding: 0;
-  background: #14495e;
+  background: #000000;
 }
 
 .eyes {
   position: absolute;
-  top: 50%;
-  left: -5%;
-  transform: translateY(-50%);
+  top: 30%;
+  /* left: -5%; */
+  /* transform: translateY(-50%); */
   width: 100%;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 .eye {
-  width: 240px;
+  width: 40%; /* 240px; */
   height: 80px;
+  top: 0%;
+  left:0;
   background: #fff;
   display: inline-block;
-  margin: 5px;
+  margin: 0px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
 }
 .ball {
-  width: 80px;
+  width: 30%;
   height: 80px;
   background: #000;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
 }
 
 
 #area_frame {
   position: absolute;
-  width: 850px;
-  height: 450px;
+  width: 720px;
+  /* height: 450px; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -50,15 +56,21 @@ body {
   width: 720px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  z-index: 1;
  }
 
 #canvas_frame {
-  width: 320px;
-  height: 200px;
-  float: right;
+  width: 720px;
+  /* height: 200px; */
+  float: left;
+  z-index: 0;
 }
 .button_controller {
   float: right;
   border: 1px solid gray;
   padding: 10px;
+}
+footer {
+    flex-shrink: none;
+    text-align: center;
 }
