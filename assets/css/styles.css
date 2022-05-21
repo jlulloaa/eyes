@@ -33,7 +33,7 @@ body {
 .ball {
   width: 30%;
   height: 80px;
-  background: #000;
+  background: rgb(12, 162, 15);
   position: absolute;
   top: 0%;
   left: 0%;

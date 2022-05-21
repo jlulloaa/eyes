@@ -17,7 +17,14 @@
     <body>
         <div class="container-fluid main"> <!-- Main block-->
             <div class="row"><!-- Header -->
-                <div class="col border">
+                <div class="col-form-label-sm ">
+                    <div id="header">
+                        <h1>PacMen Factory</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row"><!-- Body -->
+                <div class="col ">
                     <div id="area_frame">
                         <div class="eyes" id="eyes">
                             <div class="eye" id="leye">
@@ -30,7 +37,6 @@
                         <div>
                             <video id="video_frame" playsinline autoplay>
                             </video>
-                    </canvas>
                         </div>
                         <div id="sizeRange">
                             <label for="sizeSlider" style="color: yellow">Slide to Resize Eyes</label><br>
@@ -42,13 +48,10 @@
                 </div>
             </div>
 
-
-
-        <footer class="footer">
-            MIT licence
-        </footer>
-    </div> 
+            <footer class="footer">
+                MIT licence
+            </footer>
+        </div> 
         <script src="assets/js/eyes.js"></script>
-
     </body>
 </html>
