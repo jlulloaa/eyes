@@ -1,18 +1,20 @@
+// Define initial constants and "talk" with the DOM:
 const balls = document.getElementsByClassName('ball');
-
 const area_frame = document.getElementById('area_frame');
 const area_rect = area_frame.getBoundingClientRect();
 
-const rtop = area_rect.top;
-const rleft = area_rect.left;
 const height = document.getElementById('video_frame').clientHeight;
 const width = document.getElementById('video_frame').clientWidth;
+const rtop = area_rect.top;
+const rleft = area_rect.left;
 
+// DEBUG: output the position and size of the video area
 console.log('Rtop: '+rtop);
 console.log('Rleft: '+rleft);
 console.log('Height: '+height);
 console.log('Width: '+width);
 
+// Takes the mouse movement and convert it to position, so the pupils appears to follow the mouse
 document.onmousemove = (event) => {
     let xpos = event.clientX - rleft;
     let ypos = event.clientY - rtop;
@@ -30,10 +32,11 @@ document.onmousemove = (event) => {
     }
 };
 
-// Slider to resize:
-var slider = document.querySelector('#sizeRange') // getElementById("slidecontainer");
+// Slider to resize the eyes:
+var slider = document.querySelector('#sizeRange');
 var leye = document.getElementById('leye');
 var reye = document.getElementById('reye');
+// The actual ratio to resize is taken from the initial width defined in the styles.css
 slider.addEventListener('input', e => {
     leye.style.width = (e.target.value * 40 / 100) + '%';    
     reye.style.width = (e.target.value * 40 / 100) + '%';
@@ -42,12 +45,12 @@ slider.addEventListener('input', e => {
         balls[i].style.height = e.target.value + '%';
     } 
 })
-// Elements from the DOM
+
+// Focus on the video area
 const videoFrame = document.getElementById('video_frame');
 const canvasFrame = document.getElementById('canvas_frame');
 const snapFrame = document.getElementById("snap_frame");
 const errorMsgElement = document.querySelector('span#errorMsg');
-
 // Video size
 const constraints = {
     video: {
@@ -55,7 +58,9 @@ const constraints = {
     }
 };
 
-// Check webcam access
+// Check webcam access 
+// The following sections were modified from:
+// https://www.raulprietofernandez.net/blog/programacion/como-acceder-a-la-webcam-con-html5-y-javascript
 async function start_cam() {
     try {
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
@@ -71,10 +76,9 @@ async function handleSuccess(stream) {
     videoFrame.srcObject = stream;
 }
 
-// Enable stop button
+// Added a stop button to stop the video stream (and close the webcam)
 async function stop_cam() {
     let tracks = window.stream.getTracks();
-
     tracks.forEach(function (track) {
         track.stop();
         track.srcObject = null;

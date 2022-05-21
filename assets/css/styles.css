@@ -2,17 +2,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
-  margin: 0;
-  padding: 0;
   background: #000000;
 }
 
 .eyes {
   position: absolute;
   top: 30%;
-  /* left: -5%; */
-  /* transform: translateY(-50%); */
   width: 100%;
   text-align: center;
   z-index: 2;
@@ -20,11 +15,8 @@ body {
 .eye {
   width: 40%; /* 240px; */
   height: 80px;
-  top: 0%;
-  left:0;
   background: #fff;
   display: inline-block;
-  margin: 0px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -35,9 +27,6 @@ body {
   height: 80px;
   background: rgb(12, 162, 15);
   position: absolute;
-  top: 0%;
-  left: 0%;
-  /* transform: translate(-50%, -50%); */
   border-radius: 50%;
   z-index: 3;
 }
@@ -46,7 +35,6 @@ body {
 #area_frame {
   position: absolute;
   width: 720px;
-  /* height: 450px; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -61,7 +49,6 @@ body {
 
 #canvas_frame {
   width: 720px;
-  /* height: 200px; */
   float: left;
   z-index: 0;
 }
