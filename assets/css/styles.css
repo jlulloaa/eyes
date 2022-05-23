@@ -17,7 +17,7 @@ h1 {
 }
 
 #video_frame {
-  width: 720px;
+  /* width: 320px; 720px; */
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   z-index: 1;
@@ -45,7 +45,7 @@ h1 {
 
 .eyes {
   position: absolute;
-  top: 30%;
+  top: 10%;
   width: 100%;
   text-align: center;
   z-index: 2;
@@ -53,7 +53,7 @@ h1 {
 
  #area_frame {
   position: absolute;
-  width: 720px;
+  /* width: 720px; */
 }
 
 a:link {
