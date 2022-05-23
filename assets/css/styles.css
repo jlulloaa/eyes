@@ -5,6 +5,34 @@ body {
   background: #000000;
 }
 
+h1 {
+  text-align: center;
+  color: rgb(12, 162, 15); /* #273b87; */
+}
+
+a:link {
+  color: rgb(12, 162, 15);
+  /* text-decoration-line: none; */
+}
+/* visited link */
+a:visited {
+  text-decoration-line: none;
+  color: rgb(12, 162, 15);
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration-line: none;
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  text-decoration-line: none;
+  color: blue;
+}
+
+
 .eyes {
   position: absolute;
   top: 30%;

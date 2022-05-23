@@ -46,6 +46,15 @@ slider.addEventListener('input', e => {
     } 
 })
 
+// Get the eye colours from the colour picker
+var eyeColour = document.querySelector('#colorpicker');
+eyeColour.addEventListener('input', e => {
+    console.log(e.target.value);
+    for (i=0; i<balls.length; i++) {
+        balls[i].style.background = e.target.value;
+    }
+});
+
 // Focus on the video area
 const videoFrame = document.getElementById('video_frame');
 const canvasFrame = document.getElementById('canvas_frame');
