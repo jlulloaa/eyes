@@ -51,7 +51,12 @@ I have formatted the page to become responsive with [bootstrap](https://getboots
 
 
 # Roadmap of future improvements
-This should be a few sentences describing what you plan to work on next in this repository. 
+This is a fun exercise that helps understand how to capture and process user interactions. It is also a very good exercise to understand how to style the elements, how positioning works within the webpage and how the elements relate to each other, specially when the user interacts with them. As such, there are many improvements and new features that could be added, some of them could be:
+
+*  Ability to move the eyes around the canvas, not only resizing them
+*  Ability to get an image capture of the video overlaid with the eyes, or even record a short video capsule
+*  Integrate it with some videoconference tools, so work meetings can become fun :smile:
+
 
 # Contributing
 Pull requests are welcome, and I'll be happy to chat about any improvement or extension that could be donde to this app.
