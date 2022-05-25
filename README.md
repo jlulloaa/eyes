@@ -35,7 +35,7 @@ Magic Eyes uses a canvas to overlay an optional video frame from the webcam, whi
 I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/) and also performed specific adjustements through my own css style file. 
 
 # How to Run
-<img alt="controls Screenshot" src="howto/controls.png" height=250px>
+<p align=center> <img alt="controls Screenshot" src="howto/controls.png"> </p>
 
 * In order to play with Magic Eyes, just load the page and activate the webcam by clicking on **Start the Camera**
 
@@ -47,7 +47,7 @@ I have formatted the page to become responsive with [bootstrap](https://getboots
 
 * Once you get bored, click on **Stop the camera** or just close the browser to stop the game. 
 
-<a href="https://jlulloaa.github.io/eyes"> :eye: Give it a go and have fun with Magic Eyes!! :eye: </a> 
+<h2 align=center><a href="https://jlulloaa.github.io/eyes"> :eye: Give it a go and have fun with Magic Eyes!! :eye: </a> </h2>
 
 
 # Roadmap of future improvements
