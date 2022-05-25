@@ -16,7 +16,6 @@
 
 <p align="center">
   <a href="#description">Description</a> •
-  <a href="#file-manifest">Files</a> •
   <a href="#how-to-run">How To Run</a> •
   <a href="#roadmap-of-future-improvements">What's next?</a> •
   <a href="#contributing">Contributing</a> •
@@ -27,22 +26,37 @@
 <img alt="Screenshot" src="howto/screenshot.png">
 
 # Description
+Magic Eyes is an excercise to further understand how to communicate with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) by interpreting mouse events, a popular way to bind the DOM elements to events. This is a practical exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I am pursuing.
 
+By doing this relatively simple exercise of following the mouse pointer with [`onmousemove`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmousemove) is a good way to understand how to interpret user inputs when developing web applications. Together with that, I have used this exercise to learn more about the [grid system](https://en.wikipedia.org/wiki/Holy_grail_(web_design)), [bootstrap](https://getbootstrap.com/) formatting, pagination of the web site and how to work with real-time media and embedded video.
 
-# File Manifest
+Magic Eyes uses a canvas to overlay an optional video frame from the webcam, which can be activated by the user, with the fake eyes that follows the mouse. The eyes can be resized and the pupil can be recoloured to fit your preferences :)
+
+I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/) and also performed specific adjustements through my own css style file. 
 
 # How to Run
-<a href="https://jlulloaa.github.io/eyes"> Click to see the demo </a>
+* In order to play with Magic Eyes, just load the page and activate the webcam by clicking on **Start the Camera**
+
+* Depending on your browser (I tested it with Chrome v101.0.4951.64, on a Macbook Pro 2017 with macOS Monterey 12.3.1), it will ask permission to use the webcam (if you have one).
+
+* The fun game is trying to fit your own eyes into the fake eyes, so you can resize them with the slider bar at the bottom of the video frame.
+
+* If you don't like green, you can change the eye colours by picking one from the colour palette below the slider bar. 
+
+* Once you get bored, click on **Stop the camera** or just close the browser to stop the game. 
+
+<a href="https://jlulloaa.github.io/eyes"> :eye: Give it a go and have fun with Magic Eyes!! :eye: </a> 
 
 
 # Roadmap of future improvements
 This should be a few sentences describing what you plan to work on next in this repository. 
 
 # Contributing
+Pull requests are welcome, and I'll be happy to chat about any improvement or extension that could be donde to this app.
 
 # Credits
-This software uses the following:
-(e.g. open source packages, links to other people's code snipet, images, etc.)
+This software uses the following third party tools:
+* [Bootstrap](https://getbootstrap.com/) based theme [Spacelab](https://bootswatch.com/spacelab/), from [bootswatch](https://bootswatch.com)
 
 # License information
 This project is licensed under the terms of <a href="https://github.com/jlulloaa/eyes/blob/main/LICENSE" target="_blank"> MIT license </a>
