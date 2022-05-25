@@ -30,18 +30,20 @@ Magic Eyes is an excercise to further understand how to communicate with the [DO
 
 By doing this relatively simple exercise of following the mouse pointer with [`onmousemove`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmousemove) is a good way to understand how to interpret user inputs when developing web applications. Together with that, I have used this exercise to learn more about the [grid system](https://en.wikipedia.org/wiki/Holy_grail_(web_design)), [bootstrap](https://getbootstrap.com/) formatting, pagination of the web site and how to work with real-time media and embedded video.
 
-Magic Eyes uses a canvas to overlay an optional video frame from the webcam, which can be activated by the user, with the fake eyes that follows the mouse. The eyes can be resized and the pupil can be recoloured to fit your preferences :)
+Magic Eyes uses a canvas to overlay an optional video frame from the webcam, which can be activated by the user, with the fake eyes that follows the mouse. The eyes can be resized and the pupil can be recoloured to fit your preferences :wink:
 
 I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/) and also performed specific adjustements through my own css style file. 
 
 # How to Run
+<img alt="controls Screenshot" src="howto/control.png" height=250px>
+
 * In order to play with Magic Eyes, just load the page and activate the webcam by clicking on **Start the Camera**
 
 * Depending on your browser (I tested it with Chrome v101.0.4951.64, on a Macbook Pro 2017 with macOS Monterey 12.3.1), it will ask permission to use the webcam.
 
-* The fun game is trying to fit your own eyes into the fake eyes, so you can resize them with the slider bar at the bottom of the video frame.
+* The fun game is trying to fit your own eyes into the fake eyes, so you can resize them with the **Slider bar** at the bottom of the video frame.
 
-* If you don't like green, you can change the eye colours by picking one from the colour palette below the slider bar. 
+* If you don't like green, you can change the eye colours by picking one from the **colour palette** below the slider bar. 
 
 * Once you get bored, click on **Stop the camera** or just close the browser to stop the game. 
 
