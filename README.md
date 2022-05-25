@@ -35,7 +35,7 @@ Magic Eyes uses a canvas to overlay an optional video frame from the webcam, whi
 I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/) and also performed specific adjustements through my own css style file. 
 
 # How to Run
-<img alt="controls Screenshot" src="howto/control.png" height=250px>
+<img alt="controls Screenshot" src="howto/controls.png" height=250px>
 
 * In order to play with Magic Eyes, just load the page and activate the webcam by clicking on **Start the Camera**
 
