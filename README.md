@@ -25,7 +25,7 @@
 
 <img alt="Screenshot" src="howto/screenshot.png">
 
-# Description
+# :eyes: Description
 Magic Eyes is an excercise to further understand how to communicate with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) by interpreting mouse events, a popular way to bind the DOM elements to events. This is a practical exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I am pursuing.
 
 By doing this relatively simple exercise of following the mouse pointer with [`onmousemove`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmousemove) is a good way to understand how to interpret user inputs when developing web applications. Together with that, I have used this exercise to learn more about the [grid system](https://en.wikipedia.org/wiki/Holy_grail_(web_design)), [bootstrap](https://getbootstrap.com/) formatting, pagination of the web site and how to work with real-time media and embedded video.
