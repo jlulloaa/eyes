@@ -37,7 +37,7 @@ I have formatted the page to become responsive with [bootstrap](https://getboots
 # How to Run
 * In order to play with Magic Eyes, just load the page and activate the webcam by clicking on **Start the Camera**
 
-* Depending on your browser (I tested it with Chrome v101.0.4951.64, on a Macbook Pro 2017 with macOS Monterey 12.3.1), it will ask permission to use the webcam (if you have one).
+* Depending on your browser (I tested it with Chrome v101.0.4951.64, on a Macbook Pro 2017 with macOS Monterey 12.3.1), it will ask permission to use the webcam.
 
 * The fun game is trying to fit your own eyes into the fake eyes, so you can resize them with the slider bar at the bottom of the video frame.
 
