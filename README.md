@@ -64,7 +64,7 @@ Pull requests are welcome, and I'll be happy to chat about any improvement or ex
 # Credits
 This software uses the following third party tools:
 * [Bootstrap](https://getbootstrap.com/) based theme [Spacelab](https://bootswatch.com/spacelab), from [bootswatch](https://bootswatch.com)
-* Code snipet to interact with the webcam in javascript was taken from [Raul Prieto's blog](https://www.raulprietofernandez.net/blog/programacion/como-acceder-a-la-webcam-con-html5-y-javascript")
+* Code snipet to interact with the webcam in javascript was taken from [Raul Prieto's blog](https://www.raulprietofernandez.net/blog/programacion/como-acceder-a-la-webcam-con-html5-y-javascript)
 
 # License information
 This project is licensed under the terms of <a href="https://github.com/jlulloaa/eyes/blob/main/LICENSE" target="_blank"> MIT license </a>
